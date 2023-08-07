@@ -1,0 +1,335 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Shared style */
+:root {
+  --primary: #3a3a3a;
+  --background: #fff;
+  --btn-color: #e03c6d;
+  --text-gray-900: #18191f;
+  --gray-50: #787885;
+  --orange-60: #fb8200;
+}
+
+body {
+  background: var(--background);
+}
+
+.btn-primary {
+  color: var(--background);
+  border-radius: 41px;
+  background: var(--btn-color);
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* header style */
+.header {
+  margin: 0 8.33% 0 8.33%;
+  font-feature-settings: 'clig' off, 'liga' off;
+}
+
+/* Nav section Style */
+.nav {
+  margin-top: 95px;
+  display: flex;
+  justify-content: space-between;
+  font-family: poppins;
+}
+
+.nav > i {
+  display: none;
+}
+
+.brand-name {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-item ul {
+  display: flex;
+}
+.nav-item li {
+  list-style: none;
+  margin-right: 2vw;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Banner style */
+.banner {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-text {
+  width: 50%;
+}
+
+.banner-tittle {
+  color: var(--primary);
+  font-size: 3.25rem;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-weight: 700;
+  line-height: 70px;
+  margin-bottom: 1rem;
+}
+
+.banner-description {
+  color: var(--primary);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.btn-primary i {
+  margin-left: 5px;
+}
+
+.banner-image {
+  width: 40%;
+  padding: 50px;
+  margin-right: 12px;
+  background: url('../images/Circle\ design.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.banner-image img {
+  width: 100%;
+}
+
+/* main style */
+.main {
+  margin: 70px 11.5%;
+}
+
+.sponser {
+  padding: 40px 0;
+  border-top: 3px solid #aebccc1a;
+  border-bottom: 3px solid #aebccc1a;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sponser img {
+  margin: 10px;
+}
+
+/* Card container */
+.product-tittle {
+  margin-top: 100px;
+  text-align: center;
+  color: #3a3a3a;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 70px; /* 250% */
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-top: 30px;
+  width: 30%;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 17px 15px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-tittle {
+  color: var(--text-gray-900, #18191f);
+  font-feature-settings: 'liga' off;
+  font-family: Poppins;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 40px;
+  overflow: hidden;
+}
+
+.card-price {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+}
+
+.rating i {
+  color: var(--orange-60, #fb8200);
+}
+
+.rating span {
+  color: #5e6366;
+  font-family: inter;
+  font-size: 0.87.5rem;
+  font-weight: 700;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: 0.1px;
+}
+
+.card-description {
+  color: var(--gray-50, #787885);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 143%; /* 20.02px */
+  letter-spacing: 0.252px;
+}
+
+.see-more {
+  margin-top: 50px;
+  color: var(--btn-color);
+  text-align: right;
+}
+
+.gear {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gear-img {
+  width: 35%;
+}
+
+.gear-img img {
+  width: 100%;
+}
+
+.gear-text {
+  width: 60%;
+}
+
+.gear-tittle {
+  color: #0a0826;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 60px; /* 157.895% */
+  margin-bottom: 16px;
+}
+
+.gear-description {
+  width: 80%;
+  color: #6c6c6c;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 28px; /* 175% */
+  margin-bottom: 16px;
+}
+
+.border5 {
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  margin-top: 100px;
+  color: var(--background);
+  background: #0a0826;
+}
+
+.footer-text {
+  padding: 50px 0px;
+  text-align: center;
+  color: var(--text-gray-300, #d9dbe1);
+  font-feature-settings: 'liga' off;
+  font-family: Manrope;
+  font-size: 0.87rem;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+}
+
+.footer-tittle {
+  color: #fff;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer-icon i {
+  padding: 5px;
+  border-radius: 20px;
+  background: #292646;
+  margin-top: 20px;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 576px) {
+  .header,
+  .main {
+    margin: 35px 20px;
+  }
+
+  .nav > i {
+    display: block;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .nav {
+    align-items: center;
+    margin: 0px;
+  }
+
+  .banner,
+  .gear {
+    flex-direction: column-reverse;
+  }
+  .banner-text,
+  .banner-image,
+  .card,
+  .gear-text,
+  .gear-img,
+  .gear-description {
+    width: 100%;
+  }
+
+  .banner-text,
+  .gear-text {
+    text-align: center;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+}
